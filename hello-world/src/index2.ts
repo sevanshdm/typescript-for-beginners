@@ -49,3 +49,13 @@ type Quanitity = 50 | 100 // quanitity can only be set to 50 or 100, nothing els
 let quantity: Quanitity = 100
 
 type Metric = 'cm' | 'inch'
+
+// Nullable Types
+function greet (name: string | null) {
+    if (name) 
+        console.log(name.toUpperCase())
+    else
+        console.log('Sup!')
+}
+// TS doesn't like this because you can't call toUpperCase() on a null or undefined object
+greet (null)

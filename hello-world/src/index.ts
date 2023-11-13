@@ -8,4 +8,8 @@ function render(document: any){
     console.log(document)
 }
 
+// Array
 let numbers: number[] = [1, 2, 3] 
+
+// Tuple
+let user: [number, string] = [1, 'Shrek']

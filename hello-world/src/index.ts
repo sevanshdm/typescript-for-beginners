@@ -35,3 +35,18 @@ calculateTax(10_000)
 // function calculateTax(income: number): void {
 //     return 0
 // }
+
+// Objects
+let employee: {
+   readonly id: number,
+    name: string // ? makes it optional, so you don't have to supply it on the line 47.
+
+    // retire method        return type
+    retire: (date: Date) => void
+                                    //using method
+} = { id: 1, name: 'Shrek', retire: (date: Date) => {
+    console.log(date)
+}}
+
+// employee.name = 'Shrek' this works in JavaScript if name isn't previously provided, because JS is dynamic.
+// employee.id = 0 the readonly prevents you from modifying the value of this property.
